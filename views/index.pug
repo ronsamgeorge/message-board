@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Welcome  #{title}
+  div.main-container
+    each msg in messages
+      div.flex-container 
+        div Message :  #{msg.text}
+        div Author : #{msg.author}
+        div Date : #{msg.added}
+  
