@@ -7,10 +7,11 @@ block content
         action="/new"
         method = "POST"
     )
-        label(for="text") Enter Your Message
-        input#name(type="text", name="text" required)
-
-        label(for="author") Enter Your Message
-        input#name(type="text", name="author" required)
+        div.form-element
+            label(for="text") Message
+            input#text(type="textarea", name="text" required)
+        div.form-element
+            label(for="author") Author Name
+            input#author(type="text", name="author" required)
 
         button(type="submit") Submit

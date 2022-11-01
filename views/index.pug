@@ -2,6 +2,8 @@ extends layout
 
 block content
   h1 Welcome  #{title}
+  div
+    a(href="/new") Add New Message 
   div.main-container
     each msg in messages
       div.flex-container 
