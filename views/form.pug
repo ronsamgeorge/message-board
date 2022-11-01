@@ -1,0 +1,16 @@
+extends layout 
+
+block content
+    h1 New Message
+
+    form(
+        action="/new"
+        method = "POST"
+    )
+        label(for="text") Enter Your Message
+        input#name(type="text", name="text" required)
+
+        label(for="author") Enter Your Message
+        input#name(type="text", name="author" required)
+
+        button(type="submit") Submit
